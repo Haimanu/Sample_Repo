@@ -46,7 +46,7 @@ pipeline {
            artifact {
             artifactId('CounterWebApp')
             type('war')
-	    file path('C:/Program Files (x86)/Jenkins/workspace/Build_Job/target')
+	    
             
            }
          
