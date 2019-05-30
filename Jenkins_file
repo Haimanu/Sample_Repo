@@ -1,7 +1,8 @@
 pipeline {
   agent any
   tools {
-    maven 'M2_HOME' 
+    maven 'M2_HOME'
+    sonarqube 'Sonar_Runner'
   }
   stages {
     stage ('compile') {
@@ -19,6 +20,12 @@ pipeline {
     stage ('Build') {
       steps {
         bat 'mvn package'	 
+      }
+	 
+    }
+    stage ('sonar') {
+      steps {
+        bat 'C:\Users\manoj.reddy.kusam\Downloads\SonarQube\sonar-scanner-3.3.0.1492-windows/bin/sonar-scanner'	 
       }
 	 
     }
