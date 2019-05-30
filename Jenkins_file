@@ -45,7 +45,7 @@ pipeline {
 	      nexusArtifactUploader(
                             nexusVersion: 3,
                             protocol: http,
-                            nexusUrl: http://localhost:8081/nexus,
+                            nexusUrl: NEXUS_URL,
                             groupId: com.mkyong,
                             version: 1.0,
                             repository: Releases,
