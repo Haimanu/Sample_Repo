@@ -36,8 +36,6 @@ pipeline {
     }
     stage ('nexus') {
       steps {
-          nexusPublisher {
-	  nexusRepositoryId('Releases')
              nexusVersion('nexus2')
              protocol('http')
              nexusUrl('localhost:8081/nexus')
@@ -48,9 +46,10 @@ pipeline {
            artifact {
             artifactId('CounterWebApp')
             type('war')
+	    file('C:/Program Files (x86)/Jenkins/workspace/Build_Job/target/CounterWebApp.war')
             
            }
-         }
+         
       }
     }
   }
