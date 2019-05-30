@@ -36,8 +36,7 @@ pipeline {
     }
     stage ('nexus') {
       steps {
-        //def Nexus = tool 'Nexus'
-          nexusArtifactUploader {
+          nexusPublisher {
              nexusVersion('nexus2')
              protocol('http')
              nexusUrl('localhost:8081/nexus')
