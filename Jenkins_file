@@ -4,6 +4,11 @@ pipeline {
     maven 'M2_HOME'
   }
   stages {
+    stage('Checkout') {
+       steps {
+         echo 'Checkout'
+       }
+    }
     stage ('compile') {
       steps {
         bat 'mvn compile'	 
