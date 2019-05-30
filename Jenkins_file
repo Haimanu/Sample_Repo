@@ -34,23 +34,7 @@ pipeline {
       }
 	 
     }
-    stage ('nexus') {
-      steps {
-             nexusVersion('nexus2')
-             protocol('http')
-             nexusUrl('localhost:8081/nexus')
-             groupId('com.mkyong')
-             version('1.0')
-             repository('Releases')
-             credentialsId('15ed9237-978d-4f7a-b0c5-73276bfdd52a')
-           artifact {
-            artifactId('CounterWebApp')
-            type('war')
-	    
-            
-           }
-         
-      }
-    }
+    
+    
   }
 }
