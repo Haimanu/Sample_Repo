@@ -14,6 +14,7 @@ pipeline {
         NEXUS_REPOSITORY = "Releases"
         // Jenkins credential id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID = "15ed9237-978d-4f7a-b0c5-73276bfdd52a"
+    }
    
   stages {
     stage('Checkout') {
