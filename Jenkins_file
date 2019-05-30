@@ -44,7 +44,7 @@ pipeline {
     stage("publish to nexus") {
             steps {
 	      nexusArtifactUploader(
-                            nexusVersion: 3,
+                            nexusVersion: 2,
                             protocol: http,
                             nexusUrl: NEXUS_URL,
                             groupId: com.mkyong,
