@@ -9,10 +9,10 @@ pipeline {
         bat 'mvn compile'	 
 	  }
 	 stage ('test') {
-      steps {
-        bat 'mvn test'	 
-      }
+           steps {
+             bat 'mvn test'	 
+           }
 	 }  
-	}
+       }
   }
 }
