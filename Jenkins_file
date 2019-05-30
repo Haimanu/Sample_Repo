@@ -49,7 +49,7 @@ pipeline {
             artifactId('CounterWebApp')
             type('war')
             classifier('debug')
-            file('CounterWebApp.war')
+            file('C:/Program Files (x86)/Jenkins/workspace/Build_Job/target/CounterWebApp.war')
            }
          }
       }
