@@ -2,6 +2,7 @@ pipeline {
   agent any
   tools {
     maven 'M2_HOME'
+    git 'git2.21.0'
   }
  environment {
         // This can be nexus3 or nexus2
