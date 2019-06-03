@@ -41,7 +41,7 @@ pipeline {
       }
 	 
     }
-    stage ('sonar') {
+    stage ('code analysis with SonarQube') {
       steps {
       //def scannerHome = tool 'Sonar_Runner'
         bat 'C:/Users/manoj.reddy.kusam/Downloads/SonarQube/sonar-scanner-3.3.0.1492-windows/bin/sonar-scanner'	 
