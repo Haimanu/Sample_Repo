@@ -26,7 +26,7 @@
 			  <url>http://localhost:8085/manager/html</url>
 			  <server>TomcatServer</server>
 			  <update>true</update>
-			  <username>admin1</username>
+			  <username>admin</username>
                           <password>admin</password>
 			  <path>/mvndeploy</path>
 			</configuration>
