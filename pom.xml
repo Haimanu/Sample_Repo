@@ -24,8 +24,10 @@
 			<version>2.2</version>
 			<configuration>
 			  <url>http://localhost:8085/manager/text</url>
-			  <server>tomcat7</server>
+			  <server>TomcatServer</server>
 			  <update>true</update>
+			  <username>admin</username>
+                          <password>admin</password>
 			  <path>/mvndeploy</path>
 			</configuration>
 		  </plugin>
