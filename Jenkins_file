@@ -93,7 +93,7 @@ pipeline {
 	stage("deploy to tomcat") {
 	  steps {
 	     script {
-	       bat 'C:/Users/manoj.reddy.kusam/Desktop/Git_Project/Sample_Repo/mvn tomcat7:deploy'
+	       bat 'C:/Users/manoj.reddy.kusam/Desktop/Git_Project/Sample_Repo/ mvn tomcat7:deploy'
 	     }
 	  }
 	}
