@@ -92,11 +92,14 @@ pipeline {
         }
 	stage("deploy to tomcat") {
 	  steps {
+<<<<<<< HEAD
 	     script {
 	       bat 'C:/Users/manoj.reddy.kusam/Desktop/Git_Project/Sample_Repo/ mvn tomcat7:deploy'
 	     }
+=======
+	       bat 'mvn tomcat7:deploy'
+>>>>>>> 9996f55a60f62cd8575363fabefe1fcd18488761
 	  }
 	}
-    
   }
 }
