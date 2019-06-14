@@ -98,7 +98,7 @@ pipeline {
         }
 	stage("deploy to tomcat") {
 	  steps {
-	       bat 'mvn tomcat7:run-war'
+	       bat 'mvn tomcat7:deploy'
 	  }
 	}
   }
