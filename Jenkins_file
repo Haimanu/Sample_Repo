@@ -17,7 +17,7 @@ pipeline {
         NEXUS_CREDENTIAL_ID = "15ed9237-978d-4f7a-b0c5-73276bfdd52a"
     }
   stages {
-    stage('Checkout') {
+    stage ('Checkout') {
        steps {
          echo 'Checkout'
        }
@@ -96,7 +96,7 @@ pipeline {
                 }
             }
         }
-	stage("deploy to tomcat") {
+	stage ('deploy to tomcat') {
 	  steps {
 	       bat 'mvn tomcat7:deploy'
 	  }
