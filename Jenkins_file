@@ -15,8 +15,6 @@ pipeline {
 	TOMCAT_URL = "localhost:8085"
 	//Tomcat Credential id
 	TOMCAR_CREDENTIAL_ID = "0bf7134d-e749-49bb-b904-34e4f459befa"
-	//Sonar credential id
-	SONAR_CREDENTIAL_ID = "7d2a23ee-a0be-4c7b-ade5-c12febebc7ff"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "Hello_world"
         // Jenkins credential id to authenticate to Nexus OSS
