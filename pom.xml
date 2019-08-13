@@ -16,26 +16,21 @@
     </dependency>
   </dependencies> 
   
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.7</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+ 
   
 
 
          <distributionManagement>
-                 <repository>
-                    <id>thirdparty</id>
-                    <url>http://10.225.249.163:8081/nexus/content/repositories/thirdparty</url>
-                 </repository>
+                <snapshotRepository>
+                        <id>thirdparty</id>
+                             <url>http://localhost:8081/nexus/content/repositories/thirdparty/</url>
+                </snapshotRepository>
+                     <repository>
+                          <id>thirdparty</id>
+                          <url>http://localhost:8081/nexus/content/repositories/thirdparty</url>
+                     </repository>
          </distributionManagement>
+
     
 
 </project>
