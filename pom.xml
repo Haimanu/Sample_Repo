@@ -8,26 +8,6 @@
   <name>CounterWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
-    <configuration>
-       <container>
-            <containerId>tomcat8x</containerId>
-            <home>C:/Program Files/Apache Software Foundation/Tomcat 8.5/bin</home>
-            <type>existing</type>
-       </container>
-      <deployables>
-         <deployable>
-           <groupId>com.mkyong</groupId>
-           <artifactId>CounterWebApp</artifactId>
-           <type>war</type>
-         <properties>
-           <context>/webapp</context>
-         </properties>
-            <pingURL>http://localhost:8888</pingURL>
-            <pingTimeout>optional timeout to ping (default 20000 milliseconds)</pingTimeout>
-         </deployable>
-      </deployables>
-    </configuration>
-  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -52,6 +32,19 @@
                           <url>http://localhost:8081/nexus/content/repositories/thirdparty</url>
                      </repository>
          </distributionManagement>
+		 
+		    <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.tomcat.maven</groupId>
+                        <artifactId>tomcat7-maven-plugin</artifactId>
+                        <version>2.2</version>
+                        <configuration>
+                            <url>http://localhost:8888/manager/text</url>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
 
     
 
