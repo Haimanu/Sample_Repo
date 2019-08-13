@@ -21,7 +21,7 @@
          <distributionManagement>
                  <repository>
                     <id>thirdparty</id>
-                    <url>http://localhost:8081/nexus/content/repositories/thirdparty</url>
+                    <url>http://10.225.249.163:8081/nexus/content/repositories/thirdparty</url>
                  </repository>
          </distributionManagement>
     
