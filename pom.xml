@@ -15,18 +15,10 @@
       <scope>test</scope>
     </dependency>
   </dependencies> 
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.tomcat.maven</groupId>
-                        <artifactId>tomcat7-maven-plugin</artifactId>
-                        <version>2.2</version>
-                        <configuration>
-                            <url>http://localhost:8888/manager/text</url>
-                            <username>tomcat</username>
-                            <password>tomcat</password>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <distributionManagement>
+                 <repository>
+                    <id>thirdparty</id>
+                    <url>http://localhost:8081/nexus/content/repositories/thirdparty</url>
+                 </repository>
+            </distributionManagement>
 </project>
