@@ -11,7 +11,7 @@
     <configuration>
        <container>
             <containerId>tomcat8x</containerId>
-            <home>C:/Program Files/Apache Software Foundation/Tomcat 8.5</home>
+            <home>C:/Program Files/Apache Software Foundation/Tomcat 8.5/bin</home>
             <type>existing</type>
        </container>
       <deployables>
