@@ -15,8 +15,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies> 
-  
-  <configuration>
+    <configuration>
        <container>
             <containerId>tomcat8x</containerId>
             <home>C:\Program Files\Apache Software Foundation\Tomcat 8.5</home>
