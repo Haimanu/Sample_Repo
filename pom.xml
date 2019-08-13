@@ -21,6 +21,7 @@
             <home>C:\Program Files\Apache Software Foundation\Tomcat 8.5</home>
             <type>existing</type>
        </container>
+     </configuration>
     <deployables>
          <deployable>
            <groupId>com.mkyong</groupId>
@@ -33,7 +34,6 @@
             <pingTimeout>optional timeout to ping (default 20000 milliseconds)</pingTimeout>
          </deployable>
     </deployables>
- </configuration>
 
   
  
