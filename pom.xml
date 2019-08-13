@@ -22,7 +22,7 @@
          <properties>
            <context>/webapp</context>
          </properties>
-            <pingURL>http://localhost:8888/manager/text</pingURL>
+            <pingURL>http://localhost:8888</pingURL>
             <pingTimeout>optional timeout to ping (default 20000 milliseconds)</pingTimeout>
          </deployable>
       </deployables>
