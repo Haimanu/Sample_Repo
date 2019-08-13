@@ -15,12 +15,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies> 
+  
      <build>
-            <distributionManagement>
+         <distributionManagement>
                  <repository>
                     <id>thirdparty</id>
                     <url>http://localhost:8081/nexus/content/repositories/thirdparty</url>
                  </repository>
-            </distributionManagement>
+         </distributionManagement>
       </build>
 </project>
