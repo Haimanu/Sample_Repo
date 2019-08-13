@@ -11,16 +11,26 @@ pipeline {
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
         NEXUS_URL = "localhost:8081/nexus"
+	//Where your Tomcat is Running
+	TOMCAT_URL = "localhost:8085"
+	//Tomcat Credential id
+	TOMCAR_CREDENTIAL_ID = "0bf7134d-e749-49bb-b904-34e4f459befa"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "Hello_world"
         // Jenkins credential id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID = "15ed9237-978d-4f7a-b0c5-73276bfdd52a"
     }
   stages {
-    stage('Checkout') {
+    stage ('Checkout') {
        steps {
          echo 'Checkout'
        }
+    }
+    stage ('clean') {
+      steps {
+        bat 'mvn clean'	 
+      }
+	 
     }
     stage ('compile') {
       steps {
@@ -90,7 +100,7 @@ pipeline {
                 }
             }
         }
-	stage("deploy to tomcat") {
+	stage ('Deploy to TomcatServer') {
 	  steps {
 	       bat 'mvn tomcat7:deploy'
 	  }
