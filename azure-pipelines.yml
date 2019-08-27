@@ -10,4 +10,4 @@
     mavenSetM2Home: true
     mavenAuthenticateFeed: false
     effectivePomSkip: false
-    sonarQubeRunAnalysis: false
+    
