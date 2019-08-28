@@ -20,11 +20,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: TomcatDeployment@0
-  inputs:
-    TomcatUrl: 'http://localhost:8080'
-    Username: 'tomcat'
-    Password: 'tomcat'
-    Warfile: '**/*.war'
-    Context: '/myapp'
-    ServerVersion: '7OrAbove'
+
