@@ -6,8 +6,6 @@
 trigger:
 - master
 
-pool:
-  manu: 'BDC11-L-6R8YTT2'
 
 steps:
 - task: Maven@3
