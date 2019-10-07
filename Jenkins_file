@@ -100,7 +100,7 @@ pipeline {
                 }
             }
         }
-	stage ('Deploy to TomcatServer') {
+	stage('Deploy to TomcatServer') {
 	  steps {
 	       bat 'mvn tomcat7:deploy'
 	  }
