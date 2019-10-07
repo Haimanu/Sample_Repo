@@ -12,9 +12,9 @@ pipeline {
         // Where your Nexus is running
         NEXUS_URL = "localhost:8081/nexus"
 	//Where your Tomcat is Running
-	TOMCAT_URL = "localhost:8888"
+	TOMCAT_URL = "localhost:8085"
 	//Tomcat Credential id
-	TOMCAR_CREDENTIAL_ID = "Tomcat"
+	TOMCAR_CREDENTIAL_ID = "tomcat"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "Hello_world"
         // Jenkins credential id to authenticate to Nexus OSS
