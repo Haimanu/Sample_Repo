@@ -14,7 +14,7 @@ pipeline {
 	//Where your Tomcat is Running
 	TOMCAT_URL = "localhost:8085"
 	//Tomcat Credential id
-	TOMCAT_CREDENTIAL_ID = "tomcat"
+	TOMCAT_CREDENTIAL_ID = "2ac2fe78-fb83-4b9c-a90e-dddb644f13ed"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "Hello_world"
         // Jenkins credential id to authenticate to Nexus OSS
