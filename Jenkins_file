@@ -12,7 +12,7 @@ pipeline {
         // Where your Nexus is running
         NEXUS_URL = "localhost:8081/nexus"
 	//Where your Tomcat is Running
-	TOMCAT_URL = "localhost:8085"
+	TOMCAT_URL = "localhost:8888"
 	//Tomcat Credential id
 	TOMCAR_CREDENTIAL_ID = "0bf7134d-e749-49bb-b904-34e4f459befa"
         // Repository where we will upload the artifact
